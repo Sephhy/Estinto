@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body {
+    /* background: #3A1C71;   fallback for old browsers 
+    background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);   Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-color: rgb(7, 6, 6);
+   background-image: url('./images/500.gif');
+
+}
+
+.header {
+    /* border:3px solid white; */
+    height:10vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@keyframes float {
+    from{transform:translateY(0)}
+    to{transform:translateY(.5rem)}
+}
+
+@keyframes lift {
+    0%{transform:translateY(0)}
+    50%{transform: translateY(-.6rem)}
+    75%{transform: translateY(-.4rem)}
+    100%{transform:translateY(-.5rem)}
+}
+
+#cloud1 {
+    animation: float 2s ease-in-out .5s infinite alternate both;
+}
+
+#cloud2 {
+    animation: float 2s ease-in-out 1s infinite alternate both;
+}
+
+#cloud3 {
+    animation: float 2s ease-in-out .5s infinite alternate both;
+}
+
+#cloud4 {
+    animation: float 2s ease-in-out .8s infinite alternate both;
+}
+
+#cloud5 {
+    animation: float 2s ease-in-out 1s infinite alternate both;
+}
+
+#cloud6 {
+    animation: float 2s ease-in-out .5s infinite alternate both;
+}
+
+
+
+
+.player {
+    margin:0 auto;
+    width:90vw;
+    height:75vh;
+    width:75vw;
+    /* border:2px solid red; */
+    display:flex;
+    flex-direction: column;
+    /* border:1px solid pink; */
+ 
+}
+.videoPlayer {
+    display:flex;
+    border-radius:25px;
+    /* border:3px solid pink; */
+    width:75vw;
+    height:75vh;
+    margin:0 auto;
+    overflow: hidden;
+}
+.video {
+    width:75vw;
+    height:75vh;
+
+    
+}
+main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.buttons {
+   display: flex;
+   justify-content: space-around;
+   padding-right:5px;
+   padding-top:15px;
+   
+}
+
+.btn {
+    border-style: none;
+}
+.button::before {
+    content:"";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    border:3px solid white;
+    width:auto;
+    padding:5px;
+}
+
+.button:hover {
+    animation: lift ease-out .4s 1 alternate both; 
+}
+video {
+    
+    border-radius: 10px;  
+}
+
+/* .sidebar1 {
+    border:2px solid white;
+    align-self: flex-start;
+    height:50px;
+    width:50px
+} */
+.playButton {
+    background-image: url("./images/Play.png");
+    background-repeat: no-repeat;
+    background-size:center;
+    background-position: center;
+    width:55px;
+    height:55px;
+    /* border:2px solid grey; */
+    background-color: transparent;
+    border-radius: 60%;
+}
+
+.playButton:hover {
+    background-color: hsla(116, 87%, 63%, 0.801);
+    animation: lift ease-in-out .4s 1 alternate both; 
+}
+.nextButton:hover {
+    background-color: hsla(116, 87%, 63%, 0.801);
+    animation: lift ease-in-out .4s 1 alternate both; 
+}
+.prevButton:hover {
+    background-color: hsla(116, 87%, 63%, 0.801);
+    animation: lift ease-in-out .4s 1 alternate both; 
+}
+
+.nextButton {
+    background-image: url("./images/Next.png");
+    background-repeat: no-repeat;
+    background-size:center;
+    background-position: center;
+    width:55px;
+    height:55px;
+    /* border:2px solid grey; */
+    background-color: transparent;
+    border-radius: 50%;
+
+}
+.prevButton {
+    background-image: url("./images/Previous.png");
+    background-repeat: no-repeat;
+    background-size:center;
+    background-position: center;
+    width:55px;
+    height:55px;
+    /* border:2px solid grey; */
+    background-color: transparent;
+    border-radius: 50%;
+}
+.gifs {
+    /* border: 1px solid white; */
+    width: 100vw;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.emailGif {
+    width:100px;
+    margin:0 auto;
+   
+}
+.totoroGif {
+    width:450px;
+    height:50px;
+}
+
+.freq {
+    width:60px;
+}
+
+footer {
+    background-image: url("images/4.png");
+    background-repeat:repeat;
+    background-size:100%;
+}
